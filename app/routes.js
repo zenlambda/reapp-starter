@@ -20,7 +20,7 @@
 module.exports = ({ routes, route }) =>
   routes(require,
     route('app', '/', { dir: '' },
-      route('home', '/',
+      route('home', '/', { dir: 'home' },
         route('sub')
       )
     )
